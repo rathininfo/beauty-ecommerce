@@ -4,23 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/7472c29f3c.js" crossorigin="anonymous"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+</style>
   </head>
-  <body>
-       <header>
-        <nav>
-            <ul class="flex justify-center item-center gap-10 my-5">
+  <body class="font-[Merriweather]">
+       <header class="fixed top-0 w-full z-50 bg-taupe-100">
+        <nav class="max-w-10/12 mx-auto flex justify-between items-center py-4
+               backdrop-blur-md">
+            <div>
+                <p class="font-bold text-xl">Beauty</p>
+            </div>
+            <ul class="flex justify-center item-center gap-10">
                 <li><a href="">New Arrivals</a></li>
                 <li><a href="">Collections</a></li>
                 <li><a href="">Accessories</a></li>
                 <li><a href="">Home & Living</a></li>
                 <li><a href="">Sale</a></li>
             </ul>
+
+            <div class="flex justify-center items-center gap-4">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+
         </nav>
        </header>
 
        <main>
         <!-- Banner section -->
-        <section></section>
+        <section>
+             <img 
+    src="asset/image/hero.jpg"
+    alt="Hero Image"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+   <div class="absolute inset-0 bg-black/50"></div>
+     <!-- Text Content -->
+  <div class="relative z-10 flex flex-col h-full text-white max-w-10/12 mx-auto">
+    <p class="text-base text-yellow-500 mb-4 mt-50">Spring Collection 2026</p>
+    <p class="text-6xl font-bold mb-6 ">Timeless <br>
+<span class="text-yellow-500">Elegance</span></p>
+<p class="leading-8">Discover curated luxury pieces crafted with <br> extraordinary attention to detail and the finest <br> materials.</p>
+   <div class="mt-8">
+     <button class="bg-white text-black px-6 py-3 rounded">SHOP NOW</button>
+    <button class="bg-white text-black px-6 py-3 rounded">EXPLOR</button>
+   </div>
+  </div>
+
+        </section>
         <!--  As Featured In section -->
          <section></section>
          <!-- Featured Pieces section -->
